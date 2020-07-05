@@ -1,0 +1,52 @@
+.portfolio-section {
+  padding-top: $SectionPadd;
+  padding-bottom: $SectionPadd;
+}
+.we-doing-section {
+  padding-top: $SectionPadd;
+  padding-bottom: $SectionPadd;
+}
+.clients-section {
+  padding-top: $SectionPadd;
+  padding-bottom: $SectionPadd;
+}
+.qualities-section {
+  padding-top: $SectionPadd;
+}
+.team-section {
+  background: #f5f4fa;
+  padding-top: $SectionPadd;
+}
+.navigation {
+  display: $flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  margin-left: 80px;
+  & li + li {
+    margin-left: 45px;
+  }
+}
+.proffesion {
+  margin-bottom: 16px;
+}
+.contact {
+  display: $flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  margin-left: auto;
+  align-items: baseline;
+  & li + li {
+    margin-left: 30px;
+  }
+  & a {
+    color: #757575;
+    transition: $cubicAllAnimation;
+  }
+  & a:hover {
+    color: $hoverColor;
+  }
+}

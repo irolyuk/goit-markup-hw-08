@@ -1,0 +1,39 @@
+.qualities-list {
+  .text {
+    color: $qualColor;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  .title {
+    font-weight: $fontWeight;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .item {
+    width: 270px;
+    &::before {
+      display: $disBlock;
+      content: "";
+      height: 120px;
+      margin-bottom: 30px;
+      background-color: #f5f4fa;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 4px;
+    }
+  }
+  & li + li {
+    margin-left: 29px;
+  }
+  & a {
+    width: 270px;
+  }
+}
+.quailies-title {
+  display: none;
+}

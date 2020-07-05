@@ -1,0 +1,20 @@
+.logo {
+  font-family: $logoFont;
+  font-weight: $fontWeight;
+  font-size: 22px;
+  line-height: 1.2;
+  &-accent {
+    color: $hoverColor;
+  }
+  .footer & {
+    color: $bgColor;
+  }
+  .footer-adress & {
+    display: $disInblock;
+    margin-bottom: 10px;
+    font-family: $logoFont;
+    font-weight: $fontWeight;
+    font-size: 22px;
+    line-height: 1.2;
+  }
+}

@@ -1,0 +1,33 @@
+.team-list {
+  display: $flex;
+  padding-bottom: $SectionPadd;
+  .item {
+    border-radius: 4px;
+    box-shadow: $shadow;
+    & + .item {
+      margin-left: 30px;
+    }
+  }
+  .title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: $textAlign;
+    letter-spacing: 0.03em;
+  }
+  .portrait {
+    width: 270px;
+    margin-bottom: 30px;
+  }
+  .proffesion {
+    color: #757575;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: $textAlign;
+    letter-spacing: 0.03em;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+}
