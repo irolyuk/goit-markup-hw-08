@@ -18,30 +18,22 @@
   padding-top: $SectionPadd;
 }
 .navigation {
-  display: $flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  margin-left: 80px;
-  & li + li {
-    margin-left: 45px;
-  }
 }
 .proffesion {
   margin-bottom: 16px;
 }
 .contact {
-  display: $flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   margin-left: auto;
   align-items: baseline;
-  & li + li {
-    margin-left: 30px;
-  }
+
   & a {
     color: #757575;
     transition: $cubicAllAnimation;

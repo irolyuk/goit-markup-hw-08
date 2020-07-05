@@ -3,7 +3,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
+  
   height: 581px;
   background: $bgColor;
   border-radius: 4px;
@@ -25,7 +25,7 @@
   &-field {
     position: relative;
     margin-bottom: 28px;
-    display: $flex;
+
     flex-direction: column;
     border-radius: 4px;
   }
@@ -101,7 +101,7 @@
     margin: 0;
     margin-bottom: 30px;
     list-style: none;
-    display: $flex;
+
     align-items: center;
     justify-content: space-around;
   }
@@ -116,7 +116,7 @@
   &-field {
     position: relative;
     margin-bottom: 20px;
-    display: $flex;
+
     flex-direction: column;
     border-radius: 4px;
     transition: $cubicAllAnimation;

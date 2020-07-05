@@ -1,11 +1,10 @@
 .mail-button {
-  width: 200px;
   height: 50px;
   background-color: $hoverColor;
   border-radius: 4px;
   border: 0;
   color: $bgColor;
-  display: $flex;
+
   align-items: center;
   justify-content: center;
   transition: $cubicAllAnimation;
@@ -15,7 +14,6 @@
   }
 }
 .mail-input {
-  width: 358px;
   height: 50px;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
