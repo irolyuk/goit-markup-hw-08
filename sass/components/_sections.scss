@@ -1,27 +1,44 @@
 .portfolio-section {
-  padding-top: $SectionPadd;
-  padding-bottom: $SectionPadd;
+  padding-top: $mobilePadd;
+  padding-bottom: $mobilePadd;
 }
 .we-doing-section {
-  padding-top: $SectionPadd;
-  padding-bottom: $SectionPadd;
+  padding-top: $mobilePadd;
+  padding-bottom: $mobilePadd;
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
 .clients-section {
-  padding-top: $SectionPadd;
-  padding-bottom: $SectionPadd;
+  padding-top: $mobilePadd;
+  padding-bottom: $mobilePadd;
 }
 .qualities-section {
-  padding-top: $SectionPadd;
+  padding-top: $mobilePadd;
+  padding-bottom: $mobilePadd;
 }
 .team-section {
   background: #f5f4fa;
-  padding-top: $SectionPadd;
+  padding-top: $mobilePadd;
+}
+nav {
+  display: flex;
+  align-items: center;
 }
 .navigation {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
+  margin-left: 80px;
+  & li + li {
+    margin-left: 50px;
+  }
+  justify-content: space-between;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 .proffesion {
   margin-bottom: 16px;
@@ -33,6 +50,19 @@
   letter-spacing: 0.02em;
   margin-left: auto;
   align-items: baseline;
+  @media screen and (min-width: 768px) {
+    margin-bottom: -10px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: $flex;
+    margin-bottom: 0px;
+    & li + li {
+      margin-left: 30px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 
   & a {
     color: #757575;
@@ -40,5 +70,13 @@
   }
   & a:hover {
     color: $hoverColor;
+  }
+  & li {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0px;
+    }
   }
 }

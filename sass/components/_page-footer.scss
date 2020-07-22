@@ -4,9 +4,6 @@
   padding-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-  @media (min-width: 480px) {
-    width: 480px;
-  }
 
   &-adress .street {
     color: $bgColor;
@@ -29,6 +26,9 @@
     text-transform: uppercase;
   }
   .copyright {
+    @media screen and(max-width: 1200px) {
+      visibility: hidden;
+    }
     font-size: 12px;
     line-height: 2;
     text-align: $textAlign;
@@ -44,13 +44,35 @@
 
 .footer-container {
   margin: 0 auto;
-  border-bottom: 1px solid $footerSecColor;
+  @media screen and(min-width: 1200px) {
+    border-bottom: 1px solid $footerSecColor;
+  }
   padding-bottom: 28px;
   justify-content: space-between;
   align-items: baseline;
+  @media screen and(min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and(min-width: 768px) {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and(min-width: 1200px) {
+    width: 1200px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 
 .footer-adress {
+  @media screen and(max-width: 1200px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
   p {
     margin-bottom: 9px;
   }
@@ -59,19 +81,42 @@
     margin-bottom: 9px;
   }
 }
-
+.connect {
+  text-align: center;
+  @media screen and(min-width: 1200px) {
+    text-align: left;
+    width: 212px;
+    height: 83px;
+  }
+}
 .footer-connect {
+  display: flex;
   justify-content: space-around;
+
+  @media screen and(max-width: 768px) {
+    padding-left: 137px;
+    padding-right: 137px;
+    margin-bottom: 60px;
+  }
   a {
     color: $bgColor;
-
+    width: 44px;
     height: 44px;
-
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: $footerSecColor;
     border-radius: 50% 50%;
     transition: $cubicAllAnimation;
+  }
+  li:nth-child(2) {
+    margin-left: 12px;
+  }
+  li:nth-child(3) {
+    margin-left: 12px;
+  }
+  li:nth-child(4) {
+    margin-left: 12px;
   }
 
   a:hover {

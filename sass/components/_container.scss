@@ -1,11 +1,19 @@
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 0;
-  margin-left: auto;
   margin-right: auto;
-  @media (min-width: 480px) {
+  margin-left: auto;
+
+  @media screen and(min-width: 480px) {
     width: 480px;
+  }
+
+  @media screen and(min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    width: 1200px;
   }
 
   .qualities-list {
@@ -13,10 +21,5 @@
   }
   & nav {
     align-items: center;
-  }
-
-  .qualities-section & {
-    padding-bottom: 94px;
-    border-bottom: 1px solid #ececec;
   }
 }
