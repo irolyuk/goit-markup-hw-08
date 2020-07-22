@@ -1612,9 +1612,17 @@ nav {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background: #ffffff;
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-checkbox {
@@ -1637,6 +1645,9 @@ nav {
 .modal-field {
   position: relative;
   margin-bottom: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1734,19 +1745,29 @@ nav {
 }
 
 .modal-policy-label {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: #757575;
   padding: 0;
   margin: 0;
   margin-bottom: 30px;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-policy-label {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .modal-comment textarea {
@@ -1759,6 +1780,9 @@ nav {
 .modal-comment-field {
   position: relative;
   margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;

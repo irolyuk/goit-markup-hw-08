@@ -3,10 +3,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background: $bgColor;
   border-radius: 4px;
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
   &-checkbox {
     position: $posA;
     width: 1px;
@@ -25,7 +29,7 @@
   &-field {
     position: relative;
     margin-bottom: 28px;
-
+    display: flex;
     flex-direction: column;
     border-radius: 4px;
   }
@@ -93,17 +97,21 @@
 }
 .modal-policy {
   &-label {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     color: #757575;
     padding: 0;
     margin: 0;
     margin-bottom: 30px;
     list-style: none;
-
+    display: flex;
     align-items: center;
     justify-content: space-around;
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 24px;
+    }
   }
 }
 .modal-comment {
@@ -116,7 +124,7 @@
   &-field {
     position: relative;
     margin-bottom: 20px;
-
+    display: flex;
     flex-direction: column;
     border-radius: 4px;
     transition: $cubicAllAnimation;
