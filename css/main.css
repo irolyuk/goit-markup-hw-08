@@ -597,6 +597,19 @@ nav {
   line-height: 1.2;
 }
 
+@media screen and (min-width: 480px) {
+  .logo {
+    margin-bottom: 16px;
+    margin-top: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin: 0;
+  }
+}
+
 .logo-accent {
   color: #2196f3;
 }
